@@ -3,19 +3,18 @@ import java.util.Scanner;
 
 public class Calc {
     public static void main(String[] args) {
-        delete();
+    add();
     }
-
-    public static void delete() {
-        System.out.println("Enter first value:");
+    public static void add()
+    {
+        System.out.println("Please your first number:");
         Scanner inputs = new Scanner(System.in);
-        int firstVal = inputs.nextInt();
+        int firstNumber = inputs.nextInt();
 
-        System.out.println("Enter second value:");
-        int secondVal = inputs.nextInt();
+        System.out.println("Please enter your second number:");
+        int secondNumber = inputs.nextInt();
 
-        int result = firstVal - secondVal;
-        System.out.println("The result of " + firstVal + " - " + secondVal + " is " + result);
-
+        int total = firstNumber + secondNumber;
+        System.out.println("The total is " + total);
     }
 }
